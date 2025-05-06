@@ -1,0 +1,6 @@
+@VoiceToEmail.API_HostAddress = http://localhost:5168
+
+GET {{VoiceToEmail.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

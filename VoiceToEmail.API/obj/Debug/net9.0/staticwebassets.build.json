@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "DQb/GWqcnTmHB8hJaKRHQk+tz5IYpqfK/Tduia0aIaw=",
+  "Source": "VoiceToEmail.API",
+  "BasePath": "_content/VoiceToEmail.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
