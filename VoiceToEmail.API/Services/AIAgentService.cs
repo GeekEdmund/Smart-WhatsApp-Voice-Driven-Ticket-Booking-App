@@ -156,7 +156,7 @@ public class AIAgentService : IAIAgentService
                 if (_conversationContexts.TryGetValue(userId, out var context))
                 {
                     // Keep only last 10 messages to manage memory
-                    if (context.History.Count >= 10)
+                    if (context.History.Count >= 20)
                     {
                         context.History.RemoveAt(0);
                     }
@@ -217,7 +217,7 @@ public class AIAgentService : IAIAgentService
         };
 
         // Add relevant conversation history
-        foreach (var historyMessage in context.History.TakeLast(5))
+        foreach (var historyMessage in context.History.TakeLast(10))
         {
             messages.Add(new { role = historyMessage.Role, content = historyMessage.Content });
         }
